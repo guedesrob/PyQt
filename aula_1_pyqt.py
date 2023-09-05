@@ -12,7 +12,7 @@ class Janela (QMainWindow): # Estamos criando uma subclasse Janela, filha da cla
         self.largura = 800
         self.altura = 600
         self.titulo = "Primeira Janela"
-        self.CarregarJanela()
+        self.CarregarJanela() # Carrega o metodo Carregar janela definido a seguir
 
     def CarregarJanela(self): # Cria o metodo Carregar janela
         self.setGeometry(self.esquerda,self.topo,self.largura,self.altura)
@@ -21,5 +21,5 @@ class Janela (QMainWindow): # Estamos criando uma subclasse Janela, filha da cla
 
 aplicacao = QApplication(sys.argv) # Cria-se o objeto, referencia do qapplication # sys.argv meche nos paranmetros do sistema, responsavel por fechar a janela
 j= Janela() # Cria-se outro objeto que vai instanciar a classe janela
-sys.exit(aplicacao.exec_())
+sys.exit(aplicacao.exec_()) # Não entendi direito o que esse comando faz ()
 # fim
