@@ -1,3 +1,4 @@
+# Classes importantes: QApplication, QMainWindow
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow
 # PyQt5.QtWidgets -> Importar submódulo
