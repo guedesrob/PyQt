@@ -24,7 +24,6 @@ def funcao_principal():
 
     formulario.label_2.setText(opcao) # setText: metodo que edita o texto da label
 
-
 app = QtWidgets.QApplication([]) # inicializa-se a plicação na variavel app
 formulario = uic.loadUi("janela_cores.ui") #Importa-se o arquivo "janela.ui" para a variavel formulario, através do método loadUI
 formulario.pushButton.clicked.connect(funcao_principal)
