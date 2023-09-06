@@ -43,7 +43,7 @@ class Janela (QMainWindow):
 
     def botao1_click(self):
         self.label_1.setText("Pula! It's me Mario")
-        self.imagem.setPixmap(QtGui.QPixmap('Mario-Party-Transparent-PNG.png'))
+        self.imagem.setPixmap(QtGui.QPixmap('1.png'))
         self.label_1.setStyleSheet('QLabel {font-size:25px;color:"red"}')
         self.imagem.move(200,400)
 
@@ -51,7 +51,7 @@ class Janela (QMainWindow):
         self.label_1.setText("RUN ahahahahaha")
         self.label_1.setStyleSheet('QLabel {font-size:25px;color:"blue"}')
         self.imagem.move(400,400)
-        self.imagem.setPixmap(QtGui.QPixmap('run.com.png'))
+        self.imagem.setPixmap(QtGui.QPixmap('2.png'))
 
 aplicacao = QApplication(sys.argv)
 j= Janela()
