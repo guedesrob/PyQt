@@ -71,8 +71,7 @@ class Janela (QMainWindow):
 
     def mostra_texto(self):
         conteudo = self.caixa_texto.text()
-
-        self.label_caixa.setText(conteudo)
+        self.label_caixa.setText("Digitou: " + conteudo)
 
 
 aplicacao = QApplication(sys.argv)
