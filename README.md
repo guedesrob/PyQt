@@ -1,2 +1,2 @@
 # PyQt
-REpositório público apenas para treinamento em PyQt5
+Repositório público apenas para treinamento em PyQt5
