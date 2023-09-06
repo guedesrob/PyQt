@@ -46,4 +46,4 @@ class Janela (QMainWindow):
 
 aplicacao = QApplication(sys.argv)
 j= Janela()
-sys.exit(aplicacao.exec_()
+sys.exit(aplicacao.exec_())
