@@ -38,10 +38,6 @@ class Janela (QMainWindow):
     def botao2_click(self):
         print('O Botao 2 foi clicado')
 
-aplicacao = QApplication(sys.argv) # Cria-se o objeto, referencia do qapplication # sys.argv meche nos paranmetros do sistema, responsavel por fechar a janela
-j= Janela() # Cria-se outro objeto que vai instanciar a classe janela
-sys.exit(aplicacao.exec_()) # Não entendi direito o que esse comando faz ()
-# sys.exit(aplicacao.exec_())
-# codigo_de_saida = aplicacao.exec_() #Executa o aplicativo. Para a execução do código, abre a janela, e deixa o usuário interagir com ela. 
-# sys.exit(codigo_de_saida) #fecha o sistema que está sendo executado, retornando o mesmo código de saída do aplicativo.
-# fim
+aplicacao = QApplication(sys.argv)
+j= Janela()
+sys.exit(aplicacao.exec_())
