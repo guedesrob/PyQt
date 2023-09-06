@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-# Form implementation generated from reading ui file 'c:\Users\roberto.guedes\Desktop\Treinamento\PyQt\PyQt\lista.ui'
+# Form implementation generated from reading ui file 'c:\Users\roberto.guedes\Desktop\Treinamento\PyQt\PyQt\lista\lista.ui'
 #
 # Created by: PyQt5 UI code generator 5.15.9
 #
