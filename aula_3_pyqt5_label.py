@@ -2,27 +2,27 @@
 import sys
 from PyQt5.QtWidgets import QApplication, QMainWindow, QPushButton, QToolTip, QLabel
 
-class Janela (QMainWindow): # Estamos criando uma subclasse Janela, filha da classe QMainWindows
+class Janela (QMainWindow):
 
-    def __init__(self): # método contrutor
-        super().__init__() # Chama o método construtor da superclasse (QMainWindow) por herança
-        self.topo = 100 # atributo que define a distância do topo da janela à borda da tela superior (100pixel)
+    def __init__(self):
+        super().__init__()
+        self.topo = 100
         self.esquerda = 100
         self.largura = 800
         self.altura = 600
         self.titulo = "Primeira Janela"
 
-        botao1 = QPushButton('Botao 1', self) # Cria-se o botao: instacia-se a classe QPushButton
-        botao1.move(150,200) # Aplica-se o metodo move ao objeto botao1 (posição do botao )
-        botao1.resize(150,80) # Aplica-se o metodo resize ao objeto botao1 (dimensões do botao)
-        botao1.setStyleSheet('QPushButton {background-color:#20C12B;font:bold;font-size:20px}') # Usar conversor de rgb para hexadecimal
+        botao1 = QPushButton('Botao 1', self) 
+        botao1.move(150,200) 
+        botao1.resize(150,80) 
+        botao1.setStyleSheet('QPushButton {background-color:#20C12B;font:bold;font-size:20px}') 
         botao1.clicked.connect(self.botao1_click)
 
-        botao2 = QPushButton('Botao 2', self) # Cria-se o objeto botao: instacia-se da classe QPushButton
-        botao2.move(350,200) # Aplica-se o metodo move ao objeto botao1 (posição do botao )
-        botao2.resize(150,80) # Aplica-se o metodo resize ao objeto botao1 (dimensões do botao)
-        botao2.setStyleSheet('QPushButton {background-color:#20C12B;font:bold;font-size:20px}') # Usar conversor de rgb para hexadecimal
-        botao2.clicked.connect(self.botao2_click) # conecta um metodo ao botao
+        botao2 = QPushButton('Botao 2', self)
+        botao2.move(350,200)
+        botao2.resize(150,80)
+        botao2.setStyleSheet('QPushButton {background-color:#20C12B;font:bold;font-size:20px}')
+        botao2.clicked.connect(self.botao2_click)
         
         # Para que a label fique visivel fora do construtor, é necessário colocar o "self" antes dele
         self.label_1 = QLabel(self) # Cria-se o objeto label da classe QLabel
@@ -31,10 +31,9 @@ class Janela (QMainWindow): # Estamos criando uma subclasse Janela, filha da cla
         self.label_1.move(50,50) # move a label na tela
         self.label_1.setStyleSheet('QLabel {font-size:25px;color:"blue"}') # Determina o estilo da Label
         
-        # botao1 deve ser criado antes de se carregar a janela
-        self.CarregarJanela() # Carrega o metodo Carregar janela definido a seguir
+        self.CarregarJanela()
 
-    def CarregarJanela(self): # Cria o metodo Carregar janela
+    def CarregarJanela(self):
         self.setGeometry(self.esquerda,self.topo,self.largura,self.altura)
         self.setWindowTitle(self.titulo)
         self.show()
