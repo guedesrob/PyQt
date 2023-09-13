@@ -10,7 +10,7 @@ def save():
         a.write(dados)
 
 def ler_arquivo():
-    arquivo=QtWidgets.QFileDialog.getOpenFileName()[0] # Retorna janela classica de inserir o caminho p salvar o arquivo
+    arquivo=QtWidgets.QFileDialog.getOpenFileName()[0] # Retorna janela classica de inserir o caminho p abrir o arquivo
     with open (arquivo,'r') as a:
         texto=a.read()
     tela.label_5.setText(texto)
